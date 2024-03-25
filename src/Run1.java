@@ -1,7 +1,7 @@
-import controller.UniversityCreator;
-import model.University;
+import controller1.UniversityCreator;
+import model1.University;
 
-public class Run {
+public class Run1 {
 
     public static void main(String[] args) {
 
