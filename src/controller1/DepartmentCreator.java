@@ -1,6 +1,6 @@
-package controller;
-import model.Department;
-import model.Group;
+package controller1;
+import model1.Department;
+import model1.Group;
 
 import java.util.ArrayList;
 import java.util.List;

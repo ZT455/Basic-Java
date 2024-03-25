@@ -1,6 +1,6 @@
-package controller;
-import model.Human;
-import model.Sex;
+package controller1;
+import model1.Human;
+import model1.Sex;
 
 public class HumanCreator {
     public Human createHuman(String name, String surname, String patronymic, Sex sex) {

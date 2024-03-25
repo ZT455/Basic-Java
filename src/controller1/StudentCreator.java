@@ -1,7 +1,7 @@
-package controller;
+package controller1;
 
-import model.Human;
-import model.Student;
+import model1.Human;
+import model1.Student;
 
 public class StudentCreator {
     int i = 0;

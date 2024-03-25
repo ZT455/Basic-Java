@@ -1,7 +1,7 @@
-package LR4;
+package PackageTest;
 
 import com.google.gson.Gson;
-import model.University;
+import model1.University;
 
 import java.io.*;
 

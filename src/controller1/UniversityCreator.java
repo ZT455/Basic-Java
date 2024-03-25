@@ -1,7 +1,7 @@
-package controller;
-import model.Faculty;
-import model.Human;
-import model.University;
+package controller1;
+import model1.Faculty;
+import model1.Human;
+import model1.University;
 
 import java.util.ArrayList;
 import java.util.List;

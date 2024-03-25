@@ -1,8 +1,7 @@
 package PackageTest;
 
-import controller.UniversityCreator;
-import model.University;
-import LR4.JsonManager;
+import controller1.UniversityCreator;
+import model1.University;
 
 import org.junit.Test;
 import org.junit.Assert;
