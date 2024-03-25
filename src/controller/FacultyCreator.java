@@ -25,7 +25,7 @@ public class FacultyCreator {
         return faculty;
     }
 
-    Faculty oneFaculty() {
+    public Faculty oneFaculty() {
 
         HumanCreator humanCreator = new HumanCreator();
 

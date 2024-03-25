@@ -33,7 +33,7 @@ public class UniversityCreator {
 
         HumanCreator humanCreator = new HumanCreator();
 
-        University university = createUniversity("Dnipro University of Technology", 5, humanCreator.oneMan());
+        University university = createUniversity("Dnipro University of Technology", 3, humanCreator.oneMan());
 
         return university;
     }

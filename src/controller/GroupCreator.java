@@ -26,9 +26,9 @@ public class GroupCreator {
         return group;
     }
 
-    Group oneGroup() {
+    public Group oneGroup() {
 
-        Group group = createGroup(15, 30);
+        Group group = createGroup(2, 3);
 
         return group;
     }

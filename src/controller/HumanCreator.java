@@ -17,5 +17,9 @@ public class HumanCreator {
 
         return createHuman("Walter","White","Jameson",Sex.MALE);
     }
+    public  Human oneWoman(){
+
+        return createHuman("Claudia","Welloy","J",Sex.FEMALE);
+    }
 }
 

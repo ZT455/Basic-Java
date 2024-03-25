@@ -1,9 +1,10 @@
 package controller;
+
 import model.Human;
 import model.Student;
 
 public class StudentCreator {
-
+    int i = 0;
 
     public Student createStudent(Human human, int journal) {
 
@@ -20,14 +21,24 @@ public class StudentCreator {
     }
 
     public Student oneStudent() {
-
         HumanCreator humanCreator = new HumanCreator();
 
         Human oneMan = humanCreator.oneMan();
 
-        Student oneStudent = createStudent(oneMan, 1);
+        i = i + 1;
+        Student oneStudent = createStudent(oneMan, i);
 
         return oneStudent;
+    }
+    public Student secondStudent() {
+
+        HumanCreator humanCreator = new HumanCreator();
+
+        Human oneWoman = humanCreator.oneWoman();
+
+        Student secondStudent = createStudent(oneWoman, 1);
+
+        return secondStudent;
     }
 
 }
