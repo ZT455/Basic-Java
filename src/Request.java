@@ -58,7 +58,9 @@ public class Request {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter number of month: ");
+
         int month = scanner.nextInt();
 
         request(month);
