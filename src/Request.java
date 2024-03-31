@@ -3,36 +3,31 @@ import java.sql.*;
 
 public class Request {
     public static void request(int month) {
-        // Объекты для установления соединения и выполнения запросов
+
         Connection connection = null;
         Statement statement = null;
         ResultSet resultSet = null;
 
 
         try {
-            // Установление соединения с базой данных
-            connection = DriverManager.getConnection("jdbc:sqlserver://DESKTOP-DCT1PI8;database=Students;encrypt=false;trustServerCertificate=true", "admin", "Ghbujdjh1");
 
-            // Создание объекта для выполнения SQL-запросов
+            connection = DriverManager.getConnection("jdbc:sqlserver://DESKTOP-DCT1PI8;database=Group;encrypt=false;trustServerCertificate=true", "admin", "Ghbujdjh1");
+
+
             statement = connection.createStatement();
 
-            // SQL-запрос для выборки данных
-            String sqlQuery = "SELECT * FROM listStudents WHERE MONTH(Birthday) = " + month;
-            //SELECT * FROM Students WHERE MONTH(Birthday) = ?
+            String sqlQuery = "SELECT * FROM Groups WHERE MONTH(Birthday) = " + month;
 
-            // Выполнение запроса и получение результата
             resultSet = statement.executeQuery(sqlQuery);
 
-            // Обработка результатов запроса
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("Name");
                 String surname = resultSet.getString("Surname");
-                String patronymic = resultSet.getString("Patronymic");
+                String patronymic = resultSet.getString("LastName");
                 Date birthday = resultSet.getDate("Birthday");
                 String gradebook = resultSet.getString("Gradebook");
 
-                // Вывод данных
                 System.out.println("ID: " + id);
                 System.out.println("Name: " + name);
                 System.out.println("Surname: " + surname);
@@ -44,7 +39,7 @@ public class Request {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            // Закрываем все ресурсы
+
             try {
                 if (resultSet != null) resultSet.close();
                 if (statement != null) statement.close();
@@ -64,14 +59,7 @@ public class Request {
         int month = scanner.nextInt();
 
         request(month);
-        //Висновок: Формирование запроса на стороне SQL-сервера:
-        //При цьомц підході SQL-сервер виконує логіку пошуку та повертає необхідні дані:
-        //Переваги
-        //1 - Ефективне використання ресурсів: передаються лише необхідні дані
-        //2 - Краща продуктивність: SQL-сервери краще оптимізовані для виконання SQL-запитів
-        //3 - Зменшена навантаженість на додаток: додаток не виконує важкі обчислення
-        //Недоліки:
-        //Обмеження SQL: неможливо виконувати складні логічні умови
+
     }
 }
 

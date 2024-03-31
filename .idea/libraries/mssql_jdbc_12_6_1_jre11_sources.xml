@@ -4,6 +4,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://E:/!Учеба/джава/mssql-jdbc-12.6.1.jre11-sources.jar!/" />
+      <root url="jar://E:/!Учеба/!джава/mssql-jdbc-12.6.1.jre11-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

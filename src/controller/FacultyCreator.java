@@ -29,7 +29,7 @@ public class FacultyCreator {
 
         HumanCreator humanCreator = new HumanCreator();
 
-        Faculty group = createFaculty(3, 3, humanCreator.oneMan());
+        Faculty group = createFaculty(2, 3, humanCreator.oneMan());
 
         return group;
     }
