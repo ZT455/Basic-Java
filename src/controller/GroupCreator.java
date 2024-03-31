@@ -28,7 +28,7 @@ public class GroupCreator {
 
     Group oneGroup() {
 
-        Group group = createGroup(15, 30);
+        Group group = createGroup(4, 5);
 
         return group;
     }

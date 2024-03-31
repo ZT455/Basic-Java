@@ -14,7 +14,7 @@ public class Student extends Human {
     public String toString() {
 
         return "Student{" +
-                "recordBookNumber=" + journal +
+                "journal=" + journal +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", patronymic='" + patronymic + '\'' +

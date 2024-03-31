@@ -22,5 +22,6 @@
     <orderEntry type="library" name="mssql-jdbc-12.6.1.jre11" level="project" />
     <orderEntry type="library" name="mssql-jdbc-12.6.1.jre11-sources" level="project" />
     <orderEntry type="library" name="mssql-jdbc-12.6.1.jre11-javadoc" level="project" />
+    <orderEntry type="library" name="mssql-jdbc-12.6.1.jre111" level="project" />
   </component>
 </module>
